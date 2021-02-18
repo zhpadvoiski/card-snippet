@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+.card{
+    position: relative;
+    top: 50%;
+    width: 500px;
+    margin: auto;
+    transform: translateY(-50%);
+}
+.info hr{
+    height: 1px;
+    background-color: rgb(233, 233, 233);
+    border: none;
+}
+
+/* PROFILE IMAGE and BUTTON styles */
+.profile{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+img{
+    width: 100%;
+    filter: blur(10px);
+    border: 1px solid;
+}
+/* button styles */
+button.add{
+    position: absolute;
+    padding: 10px 30px;
+    font-size: 3em;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    border: 4px solid white;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button.add:hover{
+    background-color: rgba(139, 204, 248, 0.4);
+    cursor: pointer;
+}
+button.add:focus{
+    outline: none;
+}
+button.add:active{
+    background-color: rgba(61, 107, 138, 0.4);
+    outline: none;
+}
+
+
+/* PROFILE INFO styles */
+.info{
+   border: 1px solid lightgray;
+   border-radius: 0px 0px 10px 10px;
+   border-top: none;
+   box-shadow: 1px 1px 4px rgb(218, 217, 217);
+   overflow: auto;
+}
+/* main info styles */
+.main-info, .extra-info{
+    margin: 20px;
+}
+.main-info h1{
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+.main-info .location{
+    font-size: 2em;
+    color: rgb(190, 190, 190);
+}
+
+/* extra-info styles */
+.extra-info{
+    font-size: 2em;
+    color: rgb(190, 190, 190);
+    overflow: auto;
+}
+.extra-info .friends{
+    float: left;
+}
+.friends i{
+    vertical-align: top;
+    margin-right: 10px;
+    color: rgb(190, 190, 190);
+}
+.extra-info .joined{
+    float: right;
+}
